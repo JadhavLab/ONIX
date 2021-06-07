@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -810,16 +810,31 @@
 - omnetics-adapter-64 rev. 1.1</text>
 </plain>
 <instances>
-<instance part="J3" gate="G$1" x="66.04" y="78.74"/>
-<instance part="J3" gate="G$2" x="152.4" y="78.74"/>
-<instance part="J2" gate="G$1" x="66.04" y="124.46"/>
-<instance part="J2" gate="G$2" x="152.4" y="121.92"/>
-<instance part="TITLE" gate="G$1" x="5.08" y="5.08"/>
-<instance part="J1" gate="G$1" x="106.68" y="185.42"/>
-<instance part="SUPPLY46" gate="PE" x="48.26" y="175.26"/>
-<instance part="SUPPLY49" gate="PE" x="162.56" y="175.26"/>
-<instance part="J4" gate="G$1" x="152.4" y="48.26" rot="R90"/>
-<instance part="SUPPLY1" gate="PE" x="177.8" y="45.72"/>
+<instance part="J3" gate="G$1" x="66.04" y="78.74" smashed="yes"/>
+<instance part="J3" gate="G$2" x="152.4" y="78.74" smashed="yes"/>
+<instance part="J2" gate="G$1" x="66.04" y="124.46" smashed="yes"/>
+<instance part="J2" gate="G$2" x="152.4" y="121.92" smashed="yes"/>
+<instance part="TITLE" gate="G$1" x="5.08" y="5.08" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="17.78" y="6.35" size="2.54" layer="94" font="vector"/>
+<attribute name="SHEET" x="91.44" y="6.35" size="2.54" layer="94" font="vector"/>
+<attribute name="DESIGN_NAME" x="20.32" y="24.13" size="2.54" layer="94" font="vector"/>
+<attribute name="LICENSE" x="6.35" y="11.43" size="2.54" layer="94" font="vector"/>
+<attribute name="REVISION" x="83.82" y="11.43" size="2.54" layer="94" font="vector"/>
+<attribute name="DESIGNER" x="6.35" y="30.48" size="2.54" layer="94" font="vector"/>
+</instance>
+<instance part="J1" gate="G$1" x="106.68" y="185.42" smashed="yes"/>
+<instance part="SUPPLY46" gate="PE" x="48.26" y="175.26" smashed="yes">
+<attribute name="VALUE" x="43.815" y="170.561" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY49" gate="PE" x="162.56" y="175.26" smashed="yes">
+<attribute name="VALUE" x="158.115" y="170.561" size="1.778" layer="96"/>
+</instance>
+<instance part="J4" gate="G$1" x="152.4" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="148.59" y="45.72" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="SUPPLY1" gate="PE" x="177.8" y="45.72" smashed="yes">
+<attribute name="VALUE" x="173.355" y="41.021" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>

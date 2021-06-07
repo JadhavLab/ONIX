@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -163,11 +163,8 @@ Adapter Board</text>
 CERN OHL v1.2
 JPN, MWL@MIT
 2017</text>
-<wire x1="7.7" y1="22.5" x2="7.7" y2="41.5" width="0" layer="20"/>
+<wire x1="8.7" y1="-3.5" x2="8.7" y2="41.5" width="0" layer="20"/>
 <wire x1="11.99999375" y1="85.999965625" x2="-11.999996875" y2="85.999975" width="0" layer="20"/>
-<wire x1="-34.999971875" y1="44.99998125" x2="34.999984375" y2="44.99996875" width="0.254" layer="51" style="longdash"/>
-<wire x1="-34.999975" y1="44.999984375" x2="-34.999996875" y2="93.999975" width="0.254" layer="51" style="longdash"/>
-<wire x1="34.999984375" y1="44.999971875" x2="34.999984375" y2="93.999971875" width="0.254" layer="51" style="longdash"/>
 <text x="8.5" y="69" size="1.016" layer="21" font="vector" ratio="18" align="center-right">GND</text>
 <text x="8.5" y="73.5" size="1.016" layer="21" font="vector" ratio="18" align="center-right">REF</text>
 <wire x1="-6.5" y1="49.5" x2="-6.5" y2="45.5" width="0.1778" layer="21"/>
@@ -184,12 +181,12 @@ JPN, MWL@MIT
 <wire x1="7.6" y1="20" x2="-7.6" y2="20" width="0.2" layer="21" curve="-124.482919"/>
 <text x="4" y="79" size="1.016" layer="21" font="vector" ratio="18" rot="R90" align="center-right">GND</text>
 <text x="4" y="80.5" size="1.016" layer="21" font="vector" ratio="18" rot="R270" align="center-right">REF</text>
-<wire x1="-7.7" y1="41.5" x2="-7.7" y2="22.5" width="0" layer="20"/>
+<wire x1="-8.7" y1="41.5" x2="-8.7" y2="-3.5" width="0" layer="20"/>
 <wire x1="-12" y1="45.8" x2="-12" y2="86" width="0" layer="20"/>
 <wire x1="12" y1="45.8" x2="12" y2="86" width="0" layer="20"/>
-<wire x1="-7.7" y1="41.5" x2="-12" y2="45.8" width="0" layer="20"/>
-<wire x1="7.7" y1="41.5" x2="12" y2="45.8" width="0" layer="20"/>
-<wire x1="7.7" y1="22.5" x2="-7.7" y2="22.5" width="0" layer="20"/>
+<wire x1="-8.7" y1="41.5" x2="-12" y2="45.8" width="0" layer="20"/>
+<wire x1="8.7" y1="41.5" x2="12" y2="45.8" width="0" layer="20"/>
+<wire x1="8.7" y1="-3.5" x2="-8.7" y2="-3.5" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="jonnew">
@@ -446,10 +443,14 @@ JPN, MWL@MIT
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="999999"/>
 </designrules>
@@ -1315,6 +1316,13 @@ JPN, MWL@MIT
 <wire x1="0" y1="25.3" x2="0" y2="50.379975" width="0.127" layer="16"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="18,29,6a732f5aaf5aea73"/>
 <approved hash="18,29,1af8a02020209af8"/>
