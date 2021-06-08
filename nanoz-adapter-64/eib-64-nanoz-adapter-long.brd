@@ -159,11 +159,11 @@
 <plain>
 <text x="0" y="47.5" size="1.016" layer="21" font="vector" ratio="19" align="center">EIB-64 NanoZ
 Adapter Board</text>
-<text x="0" y="40.5" size="1.016" layer="21" font="vector" ratio="19" align="center">Rev. 1.1
+<text x="0" y="40.5" size="1.016" layer="21" font="vector" ratio="19" align="center">Rev. 1.1.JHB
 CERN OHL v1.2
 JPN, MWL@MIT
-2017</text>
-<wire x1="8.7" y1="-3.5" x2="8.7" y2="41.5" width="0" layer="20"/>
+2017/2021</text>
+<wire x1="8.7" y1="-6.5" x2="8.7" y2="41.5" width="0" layer="20"/>
 <wire x1="11.99999375" y1="85.999965625" x2="-11.999996875" y2="85.999975" width="0" layer="20"/>
 <text x="8.5" y="69" size="1.016" layer="21" font="vector" ratio="18" align="center-right">GND</text>
 <text x="8.5" y="73.5" size="1.016" layer="21" font="vector" ratio="18" align="center-right">REF</text>
@@ -175,18 +175,18 @@ JPN, MWL@MIT
 <wire x1="-6.5" y1="37" x2="-6.5" y2="44" width="0.1778" layer="21"/>
 <wire x1="-6.5" y1="44" x2="6.5" y2="44" width="0.1778" layer="21"/>
 <wire x1="6.5" y1="44" x2="6.5" y2="37" width="0.1778" layer="21"/>
-<wire x1="7.6" y1="20" x2="7.6" y2="28" width="0.2" layer="21"/>
-<wire x1="-7.6" y1="28" x2="-7.6" y2="20" width="0.2" layer="21"/>
+<wire x1="7.6" y1="-1" x2="7.6" y2="28" width="0.2" layer="21"/>
+<wire x1="-7.6" y1="28" x2="-7.6" y2="-1" width="0.2" layer="21"/>
 <wire x1="7.6" y1="28" x2="-7.6" y2="28" width="0.2" layer="21" curve="124.482919"/>
-<wire x1="7.6" y1="20" x2="-7.6" y2="20" width="0.2" layer="21" curve="-124.482919"/>
+<wire x1="7.6" y1="-1" x2="-7.6" y2="-1" width="0.2" layer="21" curve="-124.482919"/>
 <text x="4" y="79" size="1.016" layer="21" font="vector" ratio="18" rot="R90" align="center-right">GND</text>
 <text x="4" y="80.5" size="1.016" layer="21" font="vector" ratio="18" rot="R270" align="center-right">REF</text>
-<wire x1="-8.7" y1="41.5" x2="-8.7" y2="-3.5" width="0" layer="20"/>
+<wire x1="-8.7" y1="41.5" x2="-8.7" y2="-6.5" width="0" layer="20"/>
 <wire x1="-12" y1="45.8" x2="-12" y2="86" width="0" layer="20"/>
 <wire x1="12" y1="45.8" x2="12" y2="86" width="0" layer="20"/>
 <wire x1="-8.7" y1="41.5" x2="-12" y2="45.8" width="0" layer="20"/>
 <wire x1="8.7" y1="41.5" x2="12" y2="45.8" width="0" layer="20"/>
-<wire x1="8.7" y1="-3.5" x2="-8.7" y2="-3.5" width="0" layer="20"/>
+<wire x1="8.7" y1="-6.5" x2="-8.7" y2="-6.5" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="jonnew">
@@ -570,26 +570,8 @@ JPN, MWL@MIT
 <contactref element="J1" pad="M2"/>
 <contactref element="J1" pad="M3"/>
 <contactref element="J4" pad="P$2"/>
-<polygon width="0.127" layer="1" rank="3">
-<vertex x="-15.999990625" y="89.99998125"/>
-<vertex x="13.99999375" y="89.999978125"/>
-<vertex x="13.999971875" y="13.000009375"/>
-<vertex x="-15.9999875" y="13.000021875"/>
-</polygon>
 <wire x1="-7.275" y1="23.415" x2="-7.275" y2="26.585" width="0.127" layer="1"/>
 <wire x1="7.275" y1="23.415" x2="7.275" y2="26.585" width="0.127" layer="1"/>
-<polygon width="0.127" layer="2" thermals="no" rank="3">
-<vertex x="-14.699990625" y="89.09998125"/>
-<vertex x="15.29999375" y="89.099978125"/>
-<vertex x="15.299971875" y="12.100009375"/>
-<vertex x="-14.6999875" y="12.100021875"/>
-</polygon>
-<polygon width="0.127" layer="15" thermals="no" rank="3">
-<vertex x="-17.399990625" y="90.89998125"/>
-<vertex x="12.59999375" y="90.899978125"/>
-<vertex x="12.599971875" y="13.900009375"/>
-<vertex x="-17.3999875" y="13.900021875"/>
-</polygon>
 <via x="8.9" y="46.4" extent="1-16" drill="0.2"/>
 <via x="10.1" y="49.5" extent="1-16" drill="0.2"/>
 <via x="9.7" y="53.9" extent="1-16" drill="0.2"/>
@@ -625,11 +607,17 @@ JPN, MWL@MIT
 <via x="-7" y="40.7" extent="1-16" drill="0.2"/>
 <via x="-7" y="36" extent="1-16" drill="0.2"/>
 <contactref element="J1" pad="37"/>
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="-20" y="91"/>
-<vertex x="13" y="91"/>
-<vertex x="13" y="-5"/>
-<vertex x="-20" y="-5"/>
+<polygon width="0.1524" layer="1">
+<vertex x="-14" y="88"/>
+<vertex x="13" y="88"/>
+<vertex x="13" y="-7"/>
+<vertex x="-14" y="-7"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="-13" y="87"/>
+<vertex x="14" y="87"/>
+<vertex x="14" y="-8"/>
+<vertex x="-13" y="-8"/>
 </polygon>
 </signal>
 <signal name="REF">
